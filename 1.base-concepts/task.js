@@ -3,13 +3,13 @@ function solveEquation(a, b, c) {
   let arr = [];
   let num;
   let num2;
-  let d = b**-4*a*c;
+  let d = b**2-4*a*c;
   if (d == 0) {
     num = -b/(2*a);
     arr.push(num);
   } else if (d > 0) {
-    num = (-b + Math.sqrt(d))/(2*a);
-    num2 = (-b - Math.sqrt(d))/(2*a);
+    num = ((b-b*2) + Math.sqrt(d) )/(2*a);
+    num2 = ((b-b*2) - Math.sqrt(d) )/(2*a);
     arr.push(num, num2)
   } else {
     return arr
