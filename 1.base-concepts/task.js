@@ -4,7 +4,7 @@ function solveEquation(a, b, c) {
   let num;
   let num2;
   let d = b**-4*a*c;
-  if (!d) {
+  if (d == 0) {
     num = -b/(2*a);
     arr.push(num);
   } else if (d > 0) {
