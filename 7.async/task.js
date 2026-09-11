@@ -35,7 +35,7 @@ class AlarmClock {
                     alarm.callback();
                 }
             })
-        })
+        }, 1000)
     }
 
     stop() {
